@@ -1,0 +1,18 @@
+frontend folder
+npm create vite@latest .
+npm i
+npm i axios -> web requests
+(->using axios we dont need to parse or convert response into json
+axios handle everything)
+
+CORS error  
+way-1
+to resolve CORS error we can create proxy in vite.config.js file
+which will append http://localhost:3000 in request url when get method is called for 
+/api/jokes route and it will also tell the server that request is coming from same origin/server
+so no issue of Cross Origin Resource Sharing
+
+way-2
+we can directly use cors npm package
+
+object/data modeling->what data will be there 
